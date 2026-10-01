@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f2e9" />
+    <meta name="description" content="A ten-question field guide to artificial intelligence." />
+    <title>Machine Mind — An AI Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="Machine Mind home">
+          <span class="wordmark-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>FIELDNOTES <i> / </i> AI</span>
+        </a>
+        <span class="edition">A POCKET-SIZED KNOWLEDGE CHECK <span>NO. 001</span></span>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> THE INTELLIGENCE ISSUE</p>
+          <h1 id="page-title">How well do<br />you know <em>AI?</em></h1>
+          <p class="intro-description">Ten questions on the ideas, tools, and quirks shaping the age of artificial intelligence.</p>
+          <div class="quiz-meta">
+            <span><strong>10</strong> QUESTIONS</span>
+            <span class="meta-divider"></span>
+            <span><strong>~ 4</strong> MINUTES</span>
+          </div>
+        </div>
+
+        <aside class="art-panel" aria-label="Abstract illustration of an artificial neural network">
+          <img class="art-image" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Abstract digital illustration representing artificial intelligence" />
+          <div class="art-grid" aria-hidden="true"></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="orbit orbit-three" aria-hidden="true"></div>
+          <span class="art-node node-one" aria-hidden="true"></span>
+          <span class="art-node node-two" aria-hidden="true"></span>
+          <span class="art-node node-three" aria-hidden="true"></span>
+          <span class="art-node node-four" aria-hidden="true"></span>
+          <span class="art-index">FIG 01 <span>·</span> A NETWORK THINKING</span>
+          <span class="art-caption">Patterns in.<br />Possibilities out.</span>
+        </aside>
+      </section>
+
+      <section class="quiz-section" aria-label="AI knowledge quiz">
+        <div class="quiz-topline">
+          <div class="progress-label"><span id="question-count">01</span><span class="progress-slash">/</span><span class="progress-total">10</span><span class="progress-caption">YOUR PROGRESS</span></div>
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+            <span class="progress-fill"></span>
+          </div>
+          <span class="score-label">SCORE <strong id="score-count">00</strong></span>
+        </div>
+
+        <article class="question-card" aria-live="polite">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="question-content">
+            <p class="question-category"><span class="category-mark"></span><span id="question-category">THE BASICS</span></p>
+            <h2 id="question-text"></h2>
+            <div class="answer-list" id="answer-list" role="group" aria-label="Answer choices"></div>
+            <div class="feedback" id="feedback" aria-live="polite" hidden>
+              <span class="feedback-mark" aria-hidden="true"></span>
+              <p id="feedback-text"></p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <span class="keyboard-hint">TAKE YOUR BEST GUESS</span>
+            <button class="next-button" id="next-button" type="button" disabled>
+              <span id="next-label">CHOOSE AN ANSWER</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </footer>
+        </article>
+        <p class="source-note"><span class="source-star">✳</span> Curiosity is the right answer, too.</p>
+      </section>
+
+      <footer class="page-footer">
+        <span>FIELDNOTES FOR THE FUTURE</span>
+        <span>THINK CLEARLY. STAY CURIOUS.</span>
+      </footer>
+    </main>
+  </body>
+</html>
